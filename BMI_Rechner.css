@@ -1,0 +1,60 @@
+#container {
+    display: flex;
+    height: fit-content;
+}
+
+#containerTable {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+    position: relative;
+}
+
+#child1_containerTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+}
+
+#child3_containerTable {
+    height: 100px;
+}
+
+
+
+
+
+#bmi_card {
+    width: 250px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+#bmi_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tableBMI {
+    border: solid black;
+    border-radius: 5px;
+}
+
+table, tr, td, th {
+    border: solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+#ausgabeBMI {
+    text-align: center;
+}
+#ausgabeGewichtText {
+    font-weight: bolder;
+}

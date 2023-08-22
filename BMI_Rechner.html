@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BMI_Rechner.css"></link>
+
+</head>
+<body>
+    <div id="container">
+        <form action="" id="form">
+            <div id="bmi_card">
+                <h2>BMI-Rechner</h2>
+                <p>Ihre Größe in m: <input type="text" id="groesse" placeholder="1.83m"></p>
+                <br>
+                <p>Ihre Masse in kg: <input type="text" id="masse" placeholder="76kg"></p>
+                <br>
+                <p>Ihr Alter in Jahre: <input type="text" id="alter" placeholder="31"></p>
+                <br>
+                <input type="radio" id="weiblich" name="geschlecht" value="weiblich">
+                <label for="weiblich">weiblich</label>
+                <input type="radio" id="maennlich" name="geschlecht" value="maennlich">
+                <label for="maennlich">männlich</label>
+                <br>
+                <br>
+                <br>
+                <div id="bmi_buttons">
+                    <button type="button" onclick="bmi_berechnen()">BMI berechnen</button>
+                    <button type="button" onclick="window.location.href = window.location.href">Zurücksetzen</button>
+                </div>
+            </div>
+        </form>
+        <div id="containerTable">
+            <div id="child1_containerTable"></div>
+            <div id="child2_containerTable">
+            <table id="tableBMI">
+                <tr>
+                    <th>Kategorie</th>
+                    <th>Männer BMI</th>
+                    <th>Frauen BMI</th>
+                </tr>
+                <tr>
+                    <td>Untergewicht</td>
+                    <td>&lt20</td>
+                    <td>&lt19</td>
+                </tr>
+                <tr>
+                    <td>Normalgewicht</td>
+                    <td>20-25</td>
+                    <td>19-24</td>
+                </tr>
+                <tr>
+                    <td>Übergewicht</td>
+                    <td>25-30</td>
+                    <td>24-30</td>
+                </tr>
+                <tr>
+                    <td>Adipositas</td>
+                    <td>30-40</td>
+                    <td>30-40</td>
+                </tr>
+                <tr>
+                    <td>massive Adipositas</td>
+                    <td>&gt</td>
+                    <td>&gt</td>
+                </tr>
+            </table>
+            </div>
+            <div id="child3_containerTable">
+                <p id = "ausgabeBMI"></p>
+                <p id = "ausgabeGewichtText"></p>
+            </div>
+        </div>
+    </div>
+        <script src="BMI_Rechner.js">;
+            //bmi_berechnen();
+        </script>
+</body>
+</html>
